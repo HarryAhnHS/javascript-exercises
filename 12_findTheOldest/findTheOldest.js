@@ -22,8 +22,7 @@ const getAge = function(people) {
             age[person.name] = person.yearOfDeath - person.yearOfBirth;
         }
         else {
-            let currentDate = new Date();
-            let currentYear = currentDate.getFullYear();
+            let currentYear = new Date().getFullYear();
             age[person.name] = currentYear - person.yearOfBirth;
         }
         return age;
